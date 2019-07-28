@@ -1,12 +1,13 @@
 # gpg-agent-windows
 ***to avoid passphrase prompt in command line***
 1. go to cmd and write -> **gpgconf --list-dirs**. It will give a list of directories from there you have to choose the statring with "homedir",
-2. Then go to the directory and create a file named **gpg-agent.conf** add this lines on to the file 
+2. Then go to the directory and create a file named **gpg-agent.conf** add this lines on to the file
+
 "
 **verbose
-
 allow-preset-passphrase**
 "
+
 and save the file.
 3. Then kill gpg agent by typing **gpgconf --kill gpg-agent** into the cmd.
 
