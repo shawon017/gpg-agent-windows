@@ -10,7 +10,10 @@ and save the file.
 
 3. Then kill gpg agent by typing **gpgconf --kill gpg-agent** into the cmd.
 
-4. get the keygrip -> **gpg --with-keygrip --list-secret-keys** (# to list the keygrip)
+4. reconnect agent using -> **gpg-connect-agent /bye**.
 
-5. create the gpg-agent cache -> **gpg-connect-agent "preset_passphrase 6266A0D194C88B84773659094B47BE969233DFA7 -1 5040353577307264" /bye** <br />
+5. get the keygrip -> **gpg --with-keygrip --list-secret-keys** (# to list the keygrip)
+
+6. create the gpg-agent cache -> **gpg-connect-agent "preset_passphrase 6266A0D194C88B84773659094B47BE969233DFA7 -1 5040353577307264" /bye** <br />
 here the format is -- gpg-connect-agent "preset_passphrase "keygrip" [timeout] "passphrase in hex format" [-1 = infinity time]
+
