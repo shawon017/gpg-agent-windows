@@ -6,7 +6,7 @@
 "
 **verbose <br />
 allow-preset-passphrase**
-"
+" <br />
 and save the file.
 
 3. Then kill gpg agent by typing **gpgconf --kill gpg-agent** into the cmd.
