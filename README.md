@@ -4,6 +4,7 @@
 2. Then go to the directory and create a file named **gpg-agent.conf** add this lines on to the file 
 "
 **verbose
+
 allow-preset-passphrase**
 "
 and save the file.
